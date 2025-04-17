@@ -70,7 +70,3 @@ class KoreanSpacingCNN(nn.Module):
         # 7. Permute back: (batch, seq_len, num_labels)
         logits = logits.transpose(1, 2)
         return logits
-
-# Example usage:
-# model = KoreanSpacingCNN(vocab_size=len(char2idx), embedding_dim=300)
-# logits = model(input_tensor)  # logits.shape == (batch, seq_len, 2)
