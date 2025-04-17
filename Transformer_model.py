@@ -83,6 +83,3 @@ class KoreanSpacingTransformer(nn.Module):
         logits = self.classifier(output)  # (batch, seq_len, num_labels)
         return logits
 
-# Example usage:
-# model = KoreanSpacingTransformer(vocab_size=len(char2idx))
-# logits = model(input_batch, src_key_padding_mask=mask)  # logits.shape == (batch, seq_len, 2)
